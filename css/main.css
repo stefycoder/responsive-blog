@@ -1,0 +1,175 @@
+/* Inserta tu codigo aqui */
+body{
+	background-color: #2D2735;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+#cabeza{
+	background-color:#1C1821;
+}
+#cabeza img{
+	height: 50px;
+}
+nav a:hover{
+	background: purple;
+}
+#cabeza nav{
+	margin-top: 2%;
+	margin-left: 30%;
+}
+nav a{
+	text-decoration: none;
+	color:white;
+	padding: 0 10px;
+}
+#banner{
+	background: url(../image/header-image.jpg)no-repeat;
+	background-size: cover;
+	height: 350px;
+	margin-top: 4%;
+}
+.came{
+	width: 50%;
+	height: 200px;
+	background: #1C1821;
+	margin-left: 26%;
+	margin-top: 6.5%;
+}
+.came h1{
+	font-size: 5rem;
+	font-weight: bold;
+	padding-top: 2%;
+	margin-bottom: 4%;
+}
+.came span{
+	padding-left: 1%;
+	text-decoration: none;
+}
+.imagen{
+	margin-top: 15%;
+	background: #1C1821;
+	width: 100%;
+	margin-bottom: 5%;
+}
+.imagen img{
+	width: 100%;	
+}
+.imagen h3{
+	padding-bottom: 2%;
+}
+.imagen p{
+	padding-bottom: 5%;
+	font-size: 1.2rem;
+}
+.flower{
+	margin-top: 8%;
+	background: #1C1821;
+}
+.flower img{
+	width: 100%;
+}
+.video iframe{
+	width: 100%;
+}
+.geen{
+	padding: 2% 2%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.87rem;
+}
+.video{
+	background: #1C1821;
+	width: 100%;
+	margin-bottom: 5%;
+}
+.search{
+	background: #1C1821;
+	width: 100%;
+	background-position: center;
+	padding: 5% 0% 5% 10%;
+	margin-top: 10%;
+	margin-bottom: 4%;
+	border-radius: 10px;
+}
+.search input{
+	background:#2D2735;
+	width: 85%;
+	border: none;
+	padding: 4% 5%;
+	border-radius: 10px;
+	color:white;
+}
+.about{
+	background: #1C1821;
+	width: 100%;
+}
+.about img{
+	width: 100%;
+}
+.about i{
+	text-align: center;
+	padding: 3%;
+	background: #2D2735;
+	border-radius: 100%;
+	margin:2%;
+}
+.about p{
+	font-size: 1rem;
+	padding-right: 5%;
+}
+#pie{
+	background-color:#1C1821;
+	padding: 2% 0% 2% 0%;
+}
+/* Responsive */
+
+@media screen and (max-width : 920px) {
+	.container{
+		width: 100%;
+	}
+	.came{
+		width: 80%;
+		height: 200px;
+		margin:auto;
+		margin-top: 8%;
+	}
+	
+}
+@media screen and (max-width: 600px){
+	.search, .about{
+		display: none;
+	}
+	.came{
+		width: 80%;
+		height: 250px;
+		margin:auto;
+		margin-top: 8%;
+	}
+	#mostrar-nav{
+		position: absolute;
+		top: 1em;
+		left:90%;
+		width: 20px;
+		height: 25px;
+		background: url(../image/nav.png)no-repeat;
+		z-index: 30;
+	}
+	nav{
+		width: 50%;
+		background: rgba(0,0,0,.8);
+		position: absolute;
+		left: 100px;
+		box-sizing: border-box;
+		z-index:20;
+		height: 30%;
+		top:3em;
+		padding-right: .25em;
+		transition: all .3s;
+	}
+	nav a{
+		display: block;
+		padding: 2%;
+	}
+	.mostrar{
+		left:-100%;	
+	}
+	
+}
